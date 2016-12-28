@@ -1,0 +1,11 @@
+package com.bionic.edu;
+
+import java.util.List;
+
+public interface MerchantDao {
+	
+public Merchant findById(int id);
+public List<Merchant> findAll();
+public List<Merchant> getSortedByNeedToPay();
+public List<Result> getTotalReport();
+}
