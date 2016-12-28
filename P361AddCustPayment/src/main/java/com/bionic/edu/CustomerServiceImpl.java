@@ -17,7 +17,7 @@ public class CustomerServiceImpl implements CustomerService{
     	return customerDao.findById(id); 
 	}
     
-   @Transactional(propagation=Propagation.REQUIRES_NEW)
+    @Transactional(propagation=Propagation.REQUIRES_NEW)
    public void save(Customer customer){
 	   customerDao.save(customer);
    }
